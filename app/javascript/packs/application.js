@@ -16,3 +16,9 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
+
+
+
+rails g model Cocktail name:string
+rails g model Ingredient name:string
+rails g model Dose description:text ingredient:references cocktail:references
